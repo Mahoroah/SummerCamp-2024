@@ -3,9 +3,7 @@ package org.firstinspires.ftc.teamcode;
 import com.qualcomm.robotcore.eventloop.opmode.Autonomous;
 import com.qualcomm.robotcore.eventloop.opmode.LinearOpMode;
 
-import org.checkerframework.checker.units.qual.A;
-
-@Autonomous(name="AutoBase")
+@Autonomous(name = "AutoBase")
 public class AutoTemplate extends LinearOpMode {
 
 
@@ -16,9 +14,8 @@ public class AutoTemplate extends LinearOpMode {
 
         waitForStart();
 
-        while (opModeIsActive()) {
-            robot.DriveDistance(1, 5);
+        robot.driveDistance(10, 0.5);
 
-        }
+        robot.turnRight(90, 0.5);
     }
 }
